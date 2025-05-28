@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter Laser - Typing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <div class="score">Score: <span id="score">0</span></div>
+            <div class="level">Level: <span id="level">1</span></div>
+            <div class="lives">Lives: <span id="lives">7</span></div>
+            <div class="combo">Combo<br>Bonus: <span id="combo">0</span></div>
+            <div class="speed">Speed<br>Multiplier: <span id="speed">0</span></div>
+            <div class="hi-score">High Score: <span id="hi-score">0</span></div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div id="gameOverlay" class="game-overlay">
+            <div class="game-over-content">
+                <h2>Game Over!</h2>
+                <p>Final Score: <span id="finalScore">0</span></p>
+                <p>Best Combo: <span id="maxCombo">0</span></p>
+                <p class="keyboard-hint">Press SPACE or ENTER to play again</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/levels.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/enemy.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
